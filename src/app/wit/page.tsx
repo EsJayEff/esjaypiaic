@@ -1,22 +1,22 @@
 "use client";
+// As Chakra components run of client side only
 
+// imports of the libraries
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
 import React from "react";
+// importing the head component of next JS to change the title of the page.
+import Head from "../head";
+// Importing all the child components already been created
 import HeaderSite from "../components/HeaderSite";
+import Intro from "./components/Intro";
+import Cities from "../components/Cities";
+import Mission from "./components/mission";
+// Importing the component that is created for this section
+import ImageSlider from "./components/imageslider";
+// Importing all the child components already been created
+import Contact from "../components/Contact";
 import FooterSite from "../components/FooterSite";
-import { Flex, HStack, Heading,Button,Box,Menu,
-  MenuButton,
-  MenuList,
-  MenuItem, IconButton,AspectRatio,Card, CardHeader, CardBody, CardFooter,Image,Stack,Text,ButtonGroup,Divider,Grid
-  } from "@chakra-ui/react";
-// const inter = Inter({ subsets: ['latin'] })
-import Head from '../head';
-import Intro from './components/Intro';
-import ImageSlider from './components/imageslider';
-import Mission from './components/mission';
-import Cities from '../components/Cities'
-import Contact from '../components/Contact'
-
+// Extending the Chakra Theme for Fonts to be used in the for heading and for body text throughout the website.
 const theme = extendTheme({
   fonts: {
     heading: "Open Sans",
@@ -26,17 +26,19 @@ const theme = extendTheme({
 
 export default function Home() {
   return (
+    // Chakra wrapper as Chakra components are used in the children
     <ChakraBaseProvider theme={theme}>
-       <Head title ="PIAIC | WIT" />
+      {/* The title of the page  */}
+      <Head title="PIAIC | WIT" />
+      {/* child components */}
       <HeaderSite />
-      <Intro 
-      videoLink="https://www.atechconsultancy.com/piaic/WIT.mp4"/>
-      <Cities/>
+      {/* Sending the videolink as a prop to the Intro component as its been used in two different areas the website. */}
+      <Intro videoLink="https://www.atechconsultancy.com/piaic/WIT.mp4" />
+      <Cities />
       <Mission />
-      <ImageSlider/>
-      <Contact/>
+      <ImageSlider />
+      <Contact />
       <FooterSite />
-
-     </ChakraBaseProvider>
+    </ChakraBaseProvider>
   );
 }

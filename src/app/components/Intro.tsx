@@ -1,3 +1,7 @@
+"use client";
+// As Chakra components run of client side only
+
+// imports of the libraries
 import React from "react";
 import {
   AspectRatio,
@@ -7,9 +11,9 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
+import Link from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { RevealWrapper } from "next-reveal";
-import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 export default function Intro({videoLink}:{videoLink:string}) {
@@ -105,13 +109,6 @@ export default function Intro({videoLink}:{videoLink:string}) {
           </RevealWrapper>
         </GridItem>
       </Grid>
-      {/* </RevealWrapper> */}
-      {/* <Link color="whiteAlpha.800" py="10px" display={{base:'none', md:'initial',lg:'initial'}} > 
-      Explore More &nbsp; <ArrowForwardIcon />
-      </Link> */}
-
-      {/* </Box> */}
-      {/* </Flex> */}
       <RevealWrapper
         origin="top"
         delay={200}
@@ -133,9 +130,7 @@ export default function Intro({videoLink}:{videoLink:string}) {
               muted
               loop
             ></video>
-            {/* <iframe src="https://www.atechconsultancy.com/piaic/finalintro.mp4"> </iframe> */}
           </AspectRatio>
-          {/* <div className="gradient"></div> */}
         </Box>
       </RevealWrapper>
     </Box>

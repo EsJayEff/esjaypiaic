@@ -1,20 +1,18 @@
 "use client";
+// As Chakra components run of client side only
 
+// imports of the libraries
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
 import React from "react";
+// importing the head component of next JS to change the title of the page.
+import Head from "../../head";
+// Importing all the child components already been created
 import HeaderSite from "../../components/HeaderSite";
+// Importing the component that is created for this section
+import MendatoryQuarters from "../components/mendatory";
+// Importing all the child components already been created
 import FooterSite from "../../components/FooterSite";
-import Intro from "../../components/Intro";
-import Services from "../../components/Services";
-import MendatoryQuarters from "../components/mendatory"; 
-import { Flex, HStack, Heading,Button,Box,Menu,
-  MenuButton,
-  MenuList,
-  MenuItem, IconButton,AspectRatio,Card, CardHeader, CardBody, CardFooter,Image,Stack,Text,ButtonGroup,Divider,Grid
-  } from "@chakra-ui/react";
-// const inter = Inter({ subsets: ['latin'] })
-import Head from "../../head"
-
+// Extending the Chakra Theme for Fonts to be used in the for heading and for body text throughout the website.
 const theme = extendTheme({
   fonts: {
     heading: "Open Sans",
@@ -22,15 +20,16 @@ const theme = extendTheme({
   },
 });
 
-export default function Home({params}) {
+export default function Home({ params }) {
   return (
+    // Chakra wrapper as Chakra components are used in the children
     <ChakraBaseProvider theme={theme}>
-      <Head title = {"PIAIC | Programs |" + " " +`${params.courses}`} />
-    <HeaderSite/>
-    <MendatoryQuarters 
-      params={params.courses}/>
-      <FooterSite/>
-     </ChakraBaseProvider>
-
+      {/* The title of the page  */}
+      <Head title={"PIAIC | Programs |" + " " + `${params.courses}`} />
+      {/* child components */}
+      <HeaderSite />
+      <MendatoryQuarters params={params.courses} />
+      <FooterSite />
+    </ChakraBaseProvider>
   );
 }

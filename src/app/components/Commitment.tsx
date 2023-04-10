@@ -1,11 +1,17 @@
-import React from "react";
-import { VStack,AspectRatio,Box,Flex, Text,HStack, Heading, Link} from "@chakra-ui/react";
-import { CheckIcon,ArrowRightIcon } from '@chakra-ui/icons'
+"use client";
+// As Chakra components run of client side only
 
-export default function Commitment({text}:{text:string}) {
+// imports of the libraries
+import React from "react";
+import {
+  Flex,
+  Text,
+} from "@chakra-ui/react";
+
+export default function Commitment({ text }: { text: string }) {
   return (
     <Flex>
-        <Text >{text} </Text>
+      <Text>{text}</Text>
     </Flex>
-  )
+  );
 }

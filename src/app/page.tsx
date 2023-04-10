@@ -1,23 +1,25 @@
 "use client";
+// As Chakra components run of client side only
 
+// imports of the libraries
 import { ChakraBaseProvider, extendTheme } from "@chakra-ui/react";
 import React from "react";
+// Importing the head component of next JS to change the title of the page.
+import Head from "./head";
+// Importing all the child components already been created
 import HeaderSite from "./components/HeaderSite";
-import FooterSite from "./components/FooterSite";
 import Intro from "./components/Intro";
 import HowWeWork from "./components/HowWeWork";
-import Services from "./components/Services";
 import Commitments from "./components/Commitments";
-import TheWinningTeam from "./components/TheWinningTeam";
-import ImageSlider from "./components/VideoSlider";
-import Blogs from "./components/Blogs";
+import Services from "./components/Services";
 import Cities from "./components/Cities";
-import WeWorkWith from "./components/WeWorkWith";
+import TheWinningTeam from "./components/TheWinningTeam";
+import Blogs from "./components/Blogs";
+import ImageSlider from "./components/VideoSlider";
 import Contact from "./components/Contact";
-import Head from "./head"
-
-// const inter = Inter({ subsets: ['latin'] })
-
+import WeWorkWith from "./components/WeWorkWith";
+import FooterSite from "./components/FooterSite";
+// Extending the Chakra Theme for Fonts to be used in the for heading and for body text throughout the website.
 const theme = extendTheme({
   fonts: {
     heading: "Open Sans",
@@ -27,12 +29,14 @@ const theme = extendTheme({
 
 export default function Home() {
   return (
- 
- 
+    // Chakra wrapper as Chakra components are used in the children
     <ChakraBaseProvider theme={theme}>
-     <Head title ="PIAIC | Home" />
+      {/* The title of the page  */}
+      <Head title="PIAIC | Home" />
+      {/* child components */}
       <HeaderSite />
-      <Intro videoLink="https://www.atechconsultancy.com/piaic/finalintro2.mp4"/>
+      {/* Sending the videolink as a prop to the Intro component as its been used in two different areas the website. */}
+      <Intro videoLink="https://www.atechconsultancy.com/piaic/finalintro2.mp4" />
       <HowWeWork />
       <Commitments />
       <Services />
@@ -40,10 +44,9 @@ export default function Home() {
       <TheWinningTeam />
       <Blogs />
       <ImageSlider />
-      <Contact/>
+      <Contact />
       <WeWorkWith />
       <FooterSite />
     </ChakraBaseProvider>
-
   );
 }
