@@ -21,6 +21,7 @@ import {
 import { MinusIcon, AddIcon } from "@chakra-ui/icons";
 // importing the arrays to be used
 import { mendatory, specialization, names } from "./cardsdata";
+import Wrapper from "../../components/wrapper"
 
 export default function MendatoryQuarters({ params }) {
   // filter with 1 condition
@@ -32,11 +33,12 @@ export default function MendatoryQuarters({ params }) {
   });
   return (
     // main container
+  <Wrapper>
     <Box
       id="programdetails"
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
     >
       {/* The heading of the Program  */}
       {filtered.map((elem) => (
@@ -258,5 +260,6 @@ export default function MendatoryQuarters({ params }) {
         ))}
       </Grid>
     </Box>
+</Wrapper>
   );
 }

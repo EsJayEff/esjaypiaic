@@ -13,6 +13,7 @@ import {
   Grid,
   GridItem,
 } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 export default function VideoSlider() {
   const slides = [
@@ -63,9 +64,11 @@ export default function VideoSlider() {
   };
 
   return (
+    <Wrapper>
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       className="relative group"
       bg="yellow.50"
     >
@@ -120,5 +123,6 @@ export default function VideoSlider() {
         ))}
       </div>
     </Box>
+  </Wrapper>
   );
 }

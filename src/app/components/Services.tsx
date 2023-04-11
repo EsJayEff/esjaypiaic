@@ -25,14 +25,16 @@ import VisibilitySensor from "react-visibility-sensor";
 // Importing all the child components specialy for this section
 import ServiceCard from "./ServiceCard";
 import CounterUp from "./CounterUp";
+import Wrapper from "./wrapper"
 
 export default function Services() {
   return (
+    <Wrapper>
     <Box
       id="programs"
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       className="relative"
     >
       <Grid
@@ -174,5 +176,6 @@ export default function Services() {
         </TabPanels>
       </Tabs>
     </Box>
+  </Wrapper>
   );
 }

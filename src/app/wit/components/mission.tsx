@@ -16,10 +16,11 @@ import {
 import Link from "next/link";
 // Importing all the child components already been created
 import Commitment from "../../components/Commitment";
-
+import Wrapper from "../../components/wrapper"
 
 export default function Mission() {
   return (
+    <Wrapper>
     <section id="mission" className="pt-20">
       {/* Main container */}
       <Flex
@@ -43,28 +44,18 @@ export default function Mission() {
           </Heading>
           {/* Grid for image and details of the section */}
           <Grid
-            templateColumns={{
-              lg: "repeat(1, 1fr)",
-              md: "repeat(1, 1fr)",
-              base: "repeat(1, 1fr)",
-            }}
-            color="blue.800"
-            gap="8"
-          >
-            <GridItem w="100%" h="100%">
+          templateColumns={{
+            lg: "repeat(1, 1fr)",
+            md: "repeat(1, 1fr)",
+            base: "repeat(1, 1fr)",
+          }}
+          color="blue.900"
+          gap="8"
+        >
+            <GridItem>
               {/* Sending data to the commitment card component  */}
               <Commitment text="The Women Inclusion in Technology project is the largest initiative on women education in Pakistan. The main mission of the project is to drive female participation in the technology industry in Pakistan from less than 5% to 30% over the next two years. Via this project, PIAIC is propagating awareness and training on the latest, most state-of-the-art technologies to women in Pakistan. The Women Empowerment Division will aid highly skilled women in technology to establish themselves as entrepreneurs and leaders in the technology industry not only in Pakistan but also around the world." />
               <br />
-              <Commitment text="To embark your journey towards your goals and dreams requires bravery. To remain on the path requires courage. The bridge that merges the two is commitment." />
-              <br />
-              <Text>
-                &quot;We are commited and we will deliver. If you are commited
-                ?&quot; <br />
-                <br />
-                <Link href="/about" className="hover:text-blue-600">
-                  Then we should talk !{" "}
-                </Link>
-              </Text>
             </GridItem>
             {/* Image item of the grid */}
             <GridItem>
@@ -97,5 +88,6 @@ export default function Mission() {
         />
       </Flex>
     </section>
+    </Wrapper>
   );
 }

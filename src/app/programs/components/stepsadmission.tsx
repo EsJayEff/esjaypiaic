@@ -20,6 +20,7 @@ import {
 import "../../globals.css";
 // importing the array to be used in the step cards.
 import { stepsCard } from "./cardsdata";
+import Wrapper from "../../components/wrapper"
 
 export default function StepsAdmission() {
 //Using the useState to change the states of the card. 
@@ -39,6 +40,7 @@ export default function StepsAdmission() {
   };
 //Main container
   return (
+    <Wrapper>
     <Box
       w="full"
       px={{ base: "25px", md: "100px", lg: "200px" }}
@@ -135,5 +137,6 @@ export default function StepsAdmission() {
         </ButtonGroup>
       </Box>
     </Box>
+</Wrapper>
   );
 }

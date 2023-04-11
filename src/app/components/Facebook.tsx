@@ -4,9 +4,11 @@
 // imports of the libraries
 import React from "react";
 import { AspectRatio } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 export default function Facebook() {
   return (
+  <Wrapper>
     <div>
          <AspectRatio>
       <iframe 
@@ -20,5 +22,6 @@ export default function Facebook() {
       ></iframe>
       </AspectRatio>
     </div>
+  </Wrapper>
   );
 }

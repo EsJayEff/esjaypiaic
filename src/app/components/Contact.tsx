@@ -4,13 +4,15 @@
 // imports of the libraries
 import React from "react";
 import { Button, Box, Heading, Text } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 const Contact = () => {
   return (
+    <Wrapper>
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       background="blue.900"
       justifyContent="space-between"
       alignItems="flex-start"
@@ -62,6 +64,7 @@ const Contact = () => {
         </div>
       </section>
     </Box>
+  </Wrapper>
   );
 };
 

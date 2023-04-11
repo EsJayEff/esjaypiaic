@@ -15,13 +15,15 @@ import {
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import Wrapper from "./wrapper"
 
 export default function FooterSite() {
   return (
+    <Wrapper>
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       pb="100px"
       bg="gray.900"
       textAlign="center"
@@ -48,23 +50,23 @@ export default function FooterSite() {
           </VStack>
           <Box color="whiteAlpha.700" pt="20px" textAlign="center">
             <Link href="./" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>Home</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Home</Text>
             </Link>
             <br />
             <Link href="/blogs" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>Blogs</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Blogs</Text>
             </Link>
             <br />
             <Link href="/programs" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>Programs</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Programs</Text>
             </Link>
             <br />
             <Link href="/about" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>About Us</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>About Us</Text>
             </Link>
             <br />
             <Link href="/wit" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>WIT</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>WIT</Text>
             </Link>
             <br />
           </Box>
@@ -87,19 +89,19 @@ export default function FooterSite() {
             pt="10px"
           >
             <Link href="./" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>Home</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Home</Text>
             </Link>
             <Link href="/blogs" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>Blogs</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Blogs</Text>
             </Link>
             <Link href="/programs" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>Programs</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Programs</Text>
             </Link>
             <Link href="/about" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>About Us</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>About Us</Text>
             </Link>
             <Link href="/wit" className="hover:text-white">
-            <Text fontSize={{ base: "70%", md: "70%", lg: "100%" }}>WIT</Text>
+            <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>WIT</Text>
             </Link>
           </Flex>
         </GridItem>
@@ -171,5 +173,6 @@ export default function FooterSite() {
         </GridItem>
       </Grid>
     </Box>
+  </Wrapper>
   );
 }

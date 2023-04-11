@@ -11,15 +11,15 @@ import {
 } from "@chakra-ui/react";
 // Importing all the child components been created for this section only.
 import WorkMethodCard from "./WorkMethodCard";
-
+import Wrapper from "./wrapper"
 
 export default function HowWeWork() {
   return (
+    <Wrapper>
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
-      pb="100px"
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       background="whiteAlpha.900"
     >
       <Heading
@@ -79,5 +79,6 @@ export default function HowWeWork() {
         </GridItem>
       </Grid>
     </Box>
+  </Wrapper>
   );
 }

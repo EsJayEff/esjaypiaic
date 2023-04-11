@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { ArrowForwardIcon, HamburgerIcon } from "@chakra-ui/icons";
 import Link from "next/link";
+import Wrapper from "./wrapper"
 
 export default function ServiceCard({
   heading,
@@ -25,6 +26,7 @@ export default function ServiceCard({
   id: string;
 }) {
   return (
+    <Wrapper>
     <Flex flexDirection="column" bg="yellow.50" p="10px" height="full">
       <Box bg="yellow.50" p="10px" w="full">
         <Grid
@@ -78,5 +80,6 @@ export default function ServiceCard({
         </Grid>
       </Box>
     </Flex>
+  </Wrapper>
   );
 }

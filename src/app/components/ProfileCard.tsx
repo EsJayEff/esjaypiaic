@@ -7,11 +7,12 @@ import {
   Box,
   Image,
 } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 export default function ProfileCard() {
   return (
-    <>
-      {/* Profile Card */}
+    //Profile Card
+      <>
       <Box
         w="full"
         px="40px"
@@ -466,6 +467,6 @@ export default function ProfileCard() {
           </div>
         </div>
       </Box>
-    </>
+      </>
   );
 }

@@ -9,6 +9,7 @@ import {
   Text,
   Heading,
 } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 export default function WorkMethodCard({
   imagePath,
@@ -20,6 +21,7 @@ export default function WorkMethodCard({
   description: string;
 }) {
   return (
+    <Wrapper>
     <Box w="full">
       <AspectRatio ratio={16 / 9}>
         <video
@@ -38,5 +40,6 @@ export default function WorkMethodCard({
         {description}
       </Text>
     </Box>
+    </Wrapper>
   );
 }

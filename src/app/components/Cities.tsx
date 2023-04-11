@@ -11,13 +11,16 @@ import {
   Image,
   StackDivider,
 } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 export default function Cities() {
   return (
-    //Main Container
+    <Wrapper>
+    {/* Main Container */}
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       className="relative"
     >
       <Heading
@@ -111,5 +114,6 @@ export default function Cities() {
         </VStack>
       </Marquee>
     </Box>
+  </Wrapper>
   );
 }

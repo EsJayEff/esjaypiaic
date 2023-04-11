@@ -5,13 +5,15 @@
 import React from "react";
 import { Box, Heading, Image } from "@chakra-ui/react";
 import Marquee from "react-fast-marquee";
+import Wrapper from "./wrapper"
 
 export default function WeWorkWith() {
   return (
+    <Wrapper>
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "20px", md: "50px", lg: "60px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
       className="relative"
     >
       <Heading
@@ -149,5 +151,6 @@ export default function WeWorkWith() {
         </div>
       </Marquee>
     </Box>
+  </Wrapper>
   );
 }

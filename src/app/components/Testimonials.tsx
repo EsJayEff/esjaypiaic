@@ -9,15 +9,16 @@ import {
   Heading,
   Grid,
 } from "@chakra-ui/react";
+import Wrapper from "./wrapper"
 
 export default function testimonials() {
   return (
+    <Wrapper>
     <Box
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
-      pb="100px"
-    >
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
+      >
       <Heading
         fontSize={{ base: "34px", md: "44px", lg: "54px" }}
         letterSpacing="6px"
@@ -108,5 +109,6 @@ export default function testimonials() {
         </Box>
       </Grid>
     </Box>
+  </Wrapper>
   );
 }

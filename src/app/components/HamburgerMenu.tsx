@@ -15,6 +15,7 @@ import {
 import React from "react";
 // Importing all the child components already been created
 import FooterSite from "./FooterSite";
+import Wrapper from "./wrapper"
 
 export default function HamburgerMenu() {
   const sizes = ["full"];
@@ -25,7 +26,7 @@ export default function HamburgerMenu() {
     onOpen();
   };
   return (
-    <>
+    <Wrapper>
       {sizes.map((size) => (
         <Button
           onClick={() => handleClick(size)}
@@ -47,6 +48,6 @@ export default function HamburgerMenu() {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </>
+      </Wrapper>
   );
 }

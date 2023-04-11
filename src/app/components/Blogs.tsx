@@ -7,15 +7,17 @@ import { Box, Heading, Grid } from "@chakra-ui/react";
 // Importing all the child components created specially for this section
 import Tweets from "./Tweets";
 import Facebook from "./Facebook";
+import Wrapper from "./wrapper"
 
 export default function Blogs() {
   return (
-    // Main Container
+    <Wrapper>
+    {/* Main Container */}
     <Box
       id="blogs"
       w="full"
-      px={{ base: "25px", md: "100px", lg: "200px" }}
-      py={{ base: "10px", md: "50px", lg: "60px" }}
+      px={{ base: "50px", md: "100px", lg: "200px" }}
+      py={{ base: "40px", md: "50px", lg: "60px" }}
     >
       <Heading
         fontSize={{ base: "34px", md: "44px", lg: "54px" }}
@@ -75,5 +77,6 @@ export default function Blogs() {
         </Grid>
       </div>
     </Box>
+  </Wrapper>
   );
 }

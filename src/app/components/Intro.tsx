@@ -15,16 +15,18 @@ import Link from "next/link";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { RevealWrapper } from "next-reveal";
 import { TypeAnimation } from "react-type-animation";
+import Wrapper from "./wrapper"
 
 export default function Intro({videoLink}:{videoLink:string}) {
   return (
+    <Wrapper>
     <Box
       width="full"
       bg="blue.900"
       px={{ base: "25px", md: "100px", lg: "200px" }}
       py={{ base: "10px", md: "50px", lg: "60px" }}
       z-index="1"
-      mb="150px"
+      mb={{ base: "60px", md: "80px", lg: "100px" }}
     >
       <Grid
         templateColumns={{
@@ -134,5 +136,6 @@ export default function Intro({videoLink}:{videoLink:string}) {
         </Box>
       </RevealWrapper>
     </Box>
+    </Wrapper>
   );
 }

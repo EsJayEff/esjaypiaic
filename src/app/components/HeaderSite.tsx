@@ -13,11 +13,12 @@ import {
 import Link from "next/link";
 // Importing all the child components already been created
 import HamburgerMenu from "./HamburgerMenu";
+import Wrapper from "./wrapper"
 
 
 export default function HeaderSite() {
   return (
-    <div className="sticky z-10 top-0">
+    <div className="sticky z-10 top-0 max-w-screen-2xl mx-auto">
       {/* Main Container */}
       <Flex
         px={{ base: "25px", md: "100px", lg: "200px" }}
