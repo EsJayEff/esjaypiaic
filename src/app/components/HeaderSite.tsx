@@ -9,12 +9,11 @@ import {
   Heading,
   Button,
   Box,
+  Image,
 } from "@chakra-ui/react";
 import Link from "next/link";
 // Importing all the child components already been created
 import HamburgerMenu from "./HamburgerMenu";
-import Wrapper from "./wrapper"
-
 
 export default function HeaderSite() {
   return (
@@ -22,7 +21,7 @@ export default function HeaderSite() {
       {/* Main Container */}
       <Flex
         px={{ base: "25px", md: "100px", lg: "200px" }}
-        py={{ base: "10px", md: "10px", lg: "10px" }}
+        py={{ base: "20px", md: "20px", lg: "20px" }}
         width="full"
         bg="blue.900"
         alignItems="flex-end"
@@ -31,6 +30,9 @@ export default function HeaderSite() {
         {/* Header Navigation Links */}
         <Flex alignItems="flex-end">
           {/* Logo */}
+          {/* <Image mb={{ base: "-100px", md: "-100px", lg: "-100px" }} 
+          mr="20px"
+          src="piaiclogo.svg" alt="PIAIC LOGO"/> */}
           <Heading
             color="whiteAlpha.900"
             mr={{ lg: "60px", md: "30px", base: "0px" }}

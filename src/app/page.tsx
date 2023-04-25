@@ -15,7 +15,7 @@ import Services from "./components/Services";
 import Cities from "./components/Cities";
 import TheWinningTeam from "./components/TheWinningTeam";
 import Blogs from "./components/Blogs";
-import ImageSlider from "./components/VideoSlider";
+import VideoSlider from "./components/VideoSlider";
 import Contact from "./components/Contact";
 import WeWorkWith from "./components/WeWorkWith";
 import FooterSite from "./components/FooterSite";
@@ -43,7 +43,7 @@ export default function Home() {
       <Cities />
       <TheWinningTeam />
       <Blogs />
-      <ImageSlider />
+      <VideoSlider />
       <Contact />
       <WeWorkWith />
       <FooterSite />

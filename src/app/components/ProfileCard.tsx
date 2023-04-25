@@ -32,7 +32,7 @@ export default function ProfileCard() {
             <Image
               alt="zia khan"
               src="/ziakhanpot.jpg"
-              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full  border-solid border-8 border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
+              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full  border-solid border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
             />
             <h1 className="absolute top-1/2 transform -translate-y-1/2 left-5 group-hover:left-40 text-white font-bold sm:text-xl transition-all duration-300">
               Zia Khan
@@ -106,7 +106,7 @@ export default function ProfileCard() {
             <Image
               alt="Hira Khan"
               src="/hirakhanpot.jpg"
-              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-8 border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
+              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
             />
             <h1 className="absolute top-1/2 transform -translate-y-1/2 left-5 group-hover:left-40 text-white font-bold sm:text-xl transition-all duration-300">
               Hira Khan
@@ -184,7 +184,7 @@ export default function ProfileCard() {
             <Image
               alt="adil altaf"
               src="/adilaltafpot.jpg"
-              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-8 border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
+              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
             />
             <h1 className="absolute top-1/2 transform -translate-y-1/2 left-5 group-hover:left-40 text-white font-bold sm:text-xl transition-all duration-300">
               Adil Altaf
@@ -262,7 +262,7 @@ export default function ProfileCard() {
             <Image
               alt="Zeeshan Hanif"
               src="/zeeshanhanifpot.jpg"
-              className="object-cover absolute w-[120px] bottom-0 rounded-full border-solid border-8 border-white aspect-square opacity-0 group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
+              className="object-cover absolute w-[120px] bottom-0 rounded-full border-solid border-white aspect-square opacity-0 group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
             />
             <h1 className="absolute top-1/2 transform -translate-y-1/2 left-5 group-hover:left-36 text-white font-bold sm:text-xl transition-all duration-300">
               Zeeshan Hanif
@@ -339,7 +339,7 @@ export default function ProfileCard() {
             <Image
               alt="Daniyal Nagori"
               src="/daniyalnagoripot.jpg"
-              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-8 border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
+              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
             />
             <h1 className="absolute top-1/2 transform -translate-y-1/2 left-5 group-hover:left-36 text-white font-bold sm:text-xl transition-all duration-300">
               Daniyal Nagori
@@ -417,7 +417,7 @@ export default function ProfileCard() {
             <Image
               alt="You"
               src="/me.jpg"
-              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-8 border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
+              className="object-cover absolute w-[120px] bottom-0 opacity-0 rounded-full border-solid border-white aspect-square group-hover:opacity-100 transform translate-y-2/4 group-hover:translate-y-0 transition duration-300"
             />
             <h1 className="absolute top-1/2 transform -translate-y-1/2 left-5 group-hover:left-36 text-white font-bold sm:text-xl transition-all duration-300">
               Es Jay

@@ -17,7 +17,7 @@ export default function Blogs() {
       id="blogs"
       w="full"
       px={{ base: "50px", md: "100px", lg: "200px" }}
-      py={{ base: "40px", md: "50px", lg: "60px" }}
+      py={{ base: "20px", md: "20px", lg: "20px" }}
     >
       <Heading
         fontSize={{ base: "34px", md: "44px", lg: "54px" }}
@@ -43,11 +43,11 @@ export default function Blogs() {
           gap="2"
         >
           {/* Facebook component used to call the main posts on the page of the facebook of the PIAIC */}
-          <div className="w-full col-span-2 rounded-lg">
+          <div className="w-full col-span-2 row-span-2 rounded-lg">
             <Facebook />
           </div>
           {/* Twitter component used to call the main posts on the page of the twitter of the PIAIC */}
-          <div className="w-full col-span-2">
+          <div className="w-full col-span-2 row-span-2">
             <Tweets />
           </div>
           {/* First latest video of the youtube page of PIAIC */}

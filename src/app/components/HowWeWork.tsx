@@ -19,7 +19,7 @@ export default function HowWeWork() {
     <Box
       w="full"
       px={{ base: "50px", md: "100px", lg: "200px" }}
-      py={{ base: "40px", md: "50px", lg: "60px" }}
+      py={{ base: "20px", md: "20px", lg: "20px" }}
       background="whiteAlpha.900"
     >
       <Heading
