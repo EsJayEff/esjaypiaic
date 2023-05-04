@@ -32,14 +32,14 @@ export default function Blogs() {
         <Grid
           templateColumns={{
             lg: "repeat(4, 1fr)",
-            md: "repeat(1, 1fr)",
-            base: "repeat(1, 1fr)",
+            md: "repeat(2, 1fr)",
+            base: "repeat(2, 1fr)",
           }}
-          templateRows={{
-            lg: "repeat(1, 1fr)",
-            md: "repeat(1, 1fr)",
-            base: "repeat(1, 1fr)",
-          }}
+          // templateRows={{
+          //   lg: "repeat(1, 1fr)",
+          //   md: "repeat(2, 1fr)",
+          //   base: "repeat(4, 1fr)",
+          // }}
           gap="2"
         >
           {/* Facebook component used to call the main posts on the page of the facebook of the PIAIC */}
@@ -47,7 +47,7 @@ export default function Blogs() {
             <Facebook />
           </div>
           {/* Twitter component used to call the main posts on the page of the twitter of the PIAIC */}
-          <div className="w-full col-span-2 row-span-2">
+          <div className="w-full col-span-2 row-span-2 rounded-lg">
             <Tweets />
           </div>
           {/* First latest video of the youtube page of PIAIC */}

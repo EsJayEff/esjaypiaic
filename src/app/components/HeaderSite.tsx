@@ -9,6 +9,14 @@ import {
   Heading,
   Button,
   Box,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
   Image,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -17,7 +25,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 export default function HeaderSite() {
   return (
-    <div className="sticky z-10 top-0 max-w-screen-2xl mx-auto">
+    <div className="sticky z-20 top-0 max-w-screen-2xl mx-auto">
       {/* Main Container */}
       <Flex
         px={{ base: "25px", md: "100px", lg: "200px" }}
@@ -30,10 +38,14 @@ export default function HeaderSite() {
         {/* Header Navigation Links */}
         <Flex alignItems="flex-end">
           {/* Logo */}
-          {/* <Image mb={{ base: "-100px", md: "-100px", lg: "-100px" }} 
+          <Image
+          display={{ base: "none", md: "none", lg: "initial" }}
+          width="120px" height="150px"
           mr="20px"
-          src="piaiclogo.svg" alt="PIAIC LOGO"/> */}
-          <Heading
+          mb="-70px"
+          src="PIAIC_logo.png" alt="PIAIC LOGO"/>
+
+          <Heading display={{ base: "initial", md: "initial", lg: "none" }}
             color="whiteAlpha.900"
             mr={{ lg: "60px", md: "30px", base: "0px" }}
             fontSize={{ base: "32px", md: "36px", lg: "40px" }}
@@ -55,9 +67,31 @@ export default function HeaderSite() {
             <Link href="/blogs" className="hover:text-white">
               Blogs
             </Link>
-            <Link href="/programs" className="hover:text-white">
+            {/* <Link href="/programs" className="hover:text-white">
               Programs
-            </Link>
+            </Link> */}
+
+<Box className="dropdown">
+  <button className="dropbtn">Programs &nbsp;&#9660;</button>
+  <div className="dropdown-content">
+    <Link href="/programs/WEB3">&#9658;&nbsp;Web 3.0 & Metaverse</Link>
+    <hr/>
+    <Link href="/programs/AI">&#9658;&nbsp;Artificial Intelligence</Link>
+    <hr/>
+    <Link href="/programs/CN">&#9658;&nbsp;Cloud-Native</Link>
+    <hr/>
+    <Link href="/programs/IOT">&#9658;&nbsp;Ambient Computing</Link>
+    <hr/>
+    <Link href="/programs/GENOM">&#9658;&nbsp;Genomics</Link>
+    <hr/>
+    <Link href="/programs/NP">&#9658;&nbsp;Network Automation</Link>
+  </div>
+</Box>
+
+
+
+
+
             <Link href="/about" className="hover:text-white">
               About Us
             </Link>

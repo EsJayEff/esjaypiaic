@@ -10,6 +10,8 @@ import {
   Heading,
   Grid,
   GridItem,
+  Image,
+  Center,
 } from "@chakra-ui/react";
 import { ArrowForwardIcon } from "@chakra-ui/icons";
 import { RevealWrapper } from "next-reveal";
@@ -26,7 +28,7 @@ export default function Intro({ videoLink }: { videoLink: string }) {
       px={{ base: "50px", md: "100px", lg: "200px" }}
       py={{ base: "40px", md: "50px", lg: "60px" }}
       z-index="1"
-      // mb="150px"
+      mb="150px"
     >
 {/* Grid for the Texts on left and right and for responsiveness */}
       <Grid
@@ -64,6 +66,8 @@ export default function Intro({ videoLink }: { videoLink: string }) {
               />
             </Heading>
           </RevealWrapper>
+          <br/>
+         
         </GridItem>
         {/* Right Item of the Grid */}
         <GridItem w="100%" h="100%">
@@ -127,7 +131,12 @@ export default function Intro({ videoLink }: { videoLink: string }) {
               Explore More
             </a>
             <ArrowForwardIcon style={{ filter: "invert(1)" }} />
+            <br/><br/>
+            <Image src="wit.png" alt="WIT" width="200px" height="100px" style={{ filter: "invert(1)" }} className="relative ml-30"/>
           </RevealWrapper>
+         
+          
+         
         </GridItem>
       </Grid>
       {/* Animations */}
@@ -144,6 +153,7 @@ export default function Intro({ videoLink }: { videoLink: string }) {
             width="full"
             ratio={16 / 9}
             mb={{ base: "-100px", md: "-150px", lg: "-200px" }}
+            
             position="relative"
           >
             <video

@@ -16,6 +16,7 @@ import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 import WeWorkWith from "../components/WeWorkWith";
 import FooterSite from "../components/FooterSite";
+import President from "./components/president";
 // Extending the Chakra Theme for Fonts to be used in the for heading and for body text throughout the website.
 const theme = extendTheme({
   fonts: {
@@ -32,6 +33,7 @@ export default function Home() {
       <Head title="PIAIC | About" />
       {/* child components */}
       <HeaderSite />
+      <President/>
       <HowWeWork />
       <Commitments />
       <Cities />

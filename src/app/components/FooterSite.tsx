@@ -94,9 +94,26 @@ export default function FooterSite() {
             <Link href="/blogs" className="hover:text-white">
             <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Blogs</Text>
             </Link>
-            <Link href="/programs" className="hover:text-white">
+            {/* <Link href="/programs" className="hover:text-white">
             <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>Programs</Text>
-            </Link>
+            </Link> */}
+  
+  <Box fontSize={{ base: "80%", md: "80%", lg: "100%" }} className="dropdown">
+  <button className="dropbtn">Programs &nbsp;&#9660;</button>
+  <div className="dropdown-content">
+    <Link href="/programs/WEB3">&#9658;&nbsp;Web 3.0 & Metaverse</Link>
+    <hr/>
+    <Link href="/programs/AI">&#9658;&nbsp;Artificial Intelligence</Link>
+    <hr/>
+    <Link href="/programs/CN">&#9658;&nbsp;Cloud-Native&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link>
+    <hr/>
+    <Link href="/programs/IOT">&#9658;&nbsp;Ambient Computing</Link>
+    <hr/>
+    <Link href="/programs/GENOM">&#9658;&nbsp;Genomics &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</Link>
+    <hr/>
+    <Link href="/programs/NP">&#9658;&nbsp;Network Automation</Link>
+  </div>
+</Box>
             <Link href="/about" className="hover:text-white">
             <Text fontSize={{ base: "80%", md: "80%", lg: "100%" }}>About Us</Text>
             </Link>

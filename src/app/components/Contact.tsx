@@ -3,7 +3,7 @@
 
 // imports of the libraries
 import React from "react";
-import { Button, Box, Heading, Text } from "@chakra-ui/react";
+import { Button, Box, Heading, Text, Image } from "@chakra-ui/react";
 import Wrapper from "./wrapper"
 
 const Contact = () => {
@@ -34,13 +34,45 @@ const Contact = () => {
                   fontSize={{ base: "34px", md: "44px", lg: "54px" }}
                   letterSpacing="6px"
                   color="whiteAlpha.900"
-                  py="20px"
+                  // py="20px"
                 >
                   Let&apos;s work <br />
                   together!
                 </Heading>
+                <ul className="social relative" style={{ filter: "invert(1)" }}>
+            <li>
+              <a href="https://www.facebook.com/groups/590632791401391">
+                <Image
+                  alt="facebook"
+                  src="https://i.ibb.co/x7P24fL/facebook.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/piaicofficial">
+                <Image
+                  alt="twitter"
+                  src="https://i.ibb.co/Wnxq2Nq/twitter.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/piaicofficial">
+                <Image
+                  alt="instagram"
+                  src="https://i.ibb.co/ySwtH4B/instagram.png"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/company/piaicofficial/">
+                <Image alt="linkedin" src="linkedin.png" />
+              </a>
+            </li>
+          </ul>
             </div>
             </div>
+            <br/>
             {/* form */}
             <form className="flex-1  border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start ">
               <input
